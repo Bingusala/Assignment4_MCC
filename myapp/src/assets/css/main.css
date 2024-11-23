@@ -1,0 +1,41 @@
+.container {
+    text-align: center;
+    margin: 30px;
+  }
+  
+  table {
+    border-spacing: 10px;
+    border-collapse: separate;
+    width: 100%;
+    border: 0px solid #67de49;
+  }
+
+  table th ,
+  table td{
+    font-size: xx-large;
+    border: 2px solid #67de49;
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    font-weight: 600;
+ 
+  }
+
+  .imgtags{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: cadetblue;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-between;
+   
+  }
+  .imgCard{
+    width: 75%;
+    cursor: pointer;
+  }
+
+  .names{
+    font-weight: bolder;
+    font-size: xx-large;
+  }
