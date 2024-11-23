@@ -7,7 +7,16 @@ const GameTable = () => {
     const [animalName,setAnimalName] = useState('');
     const [gameStatus,setGameStatus] = useState("");
 
+    useEffect(() => {
+        randomAnimalName()
+      }, [])
+
     
+    const randomAnimalName=(()=>{
+        const rand=  Math.floor(Math.random() * 10) + 1;
+        setAnimalName(animals[rand]);
+        setGameStatus('');
+      })
     
 
       
