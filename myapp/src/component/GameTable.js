@@ -3,24 +3,18 @@ import '../assets/css/main.css'
 import {animals} from '../assets/data/data.js'
 
 const GameTable = () => {
-    {/* State to store name of random animal and store game status */}
+    
     const [animalName,setAnimalName] = useState('');
     const [gameStatus,setGameStatus] = useState("");
 
-    {/* useEffect hook to render current random animal */}
-    useEffect(() => {
-        randomAnimalName()
-      }, [])
+    
+    
 
-      {/* function to generate random animal and store it into animal array index */}
-    const randomAnimalName=(()=>{
-        const rand=  Math.floor(Math.random() * 10) + 1;
-        setAnimalName(animals[rand]);
-        setGameStatus('');
-      })
+      
+    
 
-      {/* function to check if user input matches the random animal */}
-      const handleClick=((e)=>{
+      
+    const handleClick=((e)=>{
         if(e === animalName.name){
             setGameStatus('WIN')
             setTimeout(() => {
